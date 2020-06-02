@@ -55,7 +55,6 @@ function revealCards1(ogDeck) {
       }
       revealSwitch = !revealSwitch;
     }
-
     if (newDeck.length === ogDeck.length) {
       i = 1;
       while (sortedDeck.length) {
@@ -69,7 +68,6 @@ function revealCards1(ogDeck) {
         if (i > newDeck.length) i = 1;
       }
     }
-
     i++;
   }
 
