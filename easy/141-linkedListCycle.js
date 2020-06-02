@@ -37,8 +37,11 @@
 //  */
 
 var hasCycle = function (head) {
-  let runner = this.head;
-  let follower = this.head;
+  if (!head) {
+    return false;
+  }
+  let runner = head;
+  let follower = head;
   while (runner.next && runner.next.next) {
     runner = runner.next.next;
     follower = follower.next;
