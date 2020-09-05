@@ -36,7 +36,7 @@
 
 // Runtime: 68 ms, faster than 80.56% of JavaScript online submissions for Reveal Cards In Increasing Order.
 // Memory Usage: 37.3 MB, less than 100.00% of JavaScript online submissions for Reveal Cards In Increasing Order.
-function revealCards1(ogDeck) {
+function deckRevealedIncreasing(ogDeck) {
   let newDeck = [];
   let sortedDeck = [
     ...ogDeck.sort((a, b) => {
@@ -75,16 +75,18 @@ function revealCards1(ogDeck) {
   return newDeck;
 }
 
+
+
 const deck1 = [17, 13, 11, 2, 3, 5, 7];
 const deck2 = [17, 13, 11, 2, 3, 5, 7, 18];
 // 2, h, 3, h, 5, h, 7, h
 // 2, 11, 3, h, 5, 13, 7, h
 // 2, 11, 3, 17, 5, 13, 7, 18
-const deck3 = [17, 13, 11, 2, 3, 5, 7, 18, 19];
+const deck3 = [17, 13, 11, 2, 3, 5, 7, 1, 18, 19];
 // 2, h, 3, h, 5, h, 7, h, 11
 // 2, h, 3, 13, 5, h, 7, 17, 11
 // 2, h, 3, 13, 5, 18, 7, 17, 11
 // 2, 19, 3, 13, 5, 18, 7, 17, 11
 const deck4 = [17, 13, 11, 2, 3, 5, 7, 18, 6, 9];
 
-revealCards1(deck3);
+deckRevealedIncreasing(deck3);
