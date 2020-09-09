@@ -33,6 +33,8 @@ var numJewelsInStones = function (J, S) {
 // Memory Usage: 37.1 MB, less than 52.33% of JavaScript online submissions for Jewels and Stones.
 
 //one line
-var numJewelsInStones = function (J, S) {
-	return S.split("").reduce((acc, cur) => acc + J.includes(cur), 0);
-};
+// var numJewelsInStones = function (J, S) {
+// 	return S.split("").reduce((acc, cur) => acc + J.includes(cur), 0);
+// };
+// Runtime: 80 ms, faster than 71.59% of JavaScript online submissions for Jewels and Stones.
+// Memory Usage: 37.1 MB, less than 55.63% of JavaScript online submissions for Jewels and Stones.
